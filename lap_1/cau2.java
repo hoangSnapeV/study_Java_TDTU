@@ -2,7 +2,7 @@ package lap_1;
 
 import java.util.Scanner;
 
-public class cau2 {
+public class Cau2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

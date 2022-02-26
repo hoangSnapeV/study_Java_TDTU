@@ -1,7 +1,8 @@
-package lap_1;
+package Practice_TDTU.Lap1;
+
 import java.util.Scanner;
-public class Cau3 {
-    
+
+public class Exercise4 {
     public static void main(String[] args) {
         double fahrenheit;
 
@@ -13,5 +14,3 @@ public class Cau3 {
     
     }
 }
-
-
