@@ -2,18 +2,19 @@ package Practice_TDTU.Lap1;
 
 import java.util.Scanner;
 
-public class Exercise12 {
+public class Exercise13 {
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter, number = ");
+        System.out.print("Enter, Number = ");
         int n = sc.nextInt();
-        reverseNumber(n);
-        
+
+        if (n == reverseNumber(n)) {
+            System.out.println("It's a palindrome number");
+        } else System.out.println("It's not a palindrome number");
     }
 
-    public static void reverseNumber(int n) {
+    public static int reverseNumber(int n) {
         int temp = n;
         int count = 1;
         while (temp > 10) {
@@ -30,7 +31,7 @@ public class Exercise12 {
             count /= 10;
         }
 
-        System.out.println(result);
+        return result;
 
     }
 }
