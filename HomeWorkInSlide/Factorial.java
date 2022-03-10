@@ -11,5 +11,8 @@ public class Factorial {
     public static void main(String[] args) {
         int n = 5;
         System.out.printf("Factorial (%d) = %d\n", n, factorial(n));
+        Integer it = new Integer(3);
+
+        System.out.println(it);
     }
 }
