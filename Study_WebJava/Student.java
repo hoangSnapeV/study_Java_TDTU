@@ -2,25 +2,39 @@ package Study_WebJava;
 
 public class Student {
     private String name;
-    private int age;
-    private String gender;
-    private double gpa;
+    private char gender; 
+
     public Student() {
-        
+        name = "Unknown";
+        gender = 'u';
     }
 
-    public Student(String name, int age, String gender, double gpa) {
+    public Student(String name) {
         this.name = name;
-        this.age = age;
+        this.gender = 'u';
+
+    }
+    public Student(char gender) {
+        this.name = "Unknown";
         this.gender = gender;
-        this.gpa = gpa;
+    }
+
+    public Student(String name ,char gender) {
+        this.name = name;
+        this.gender = gender;
     }
 
     public void display() {
         System.out.println("Name: " + name);
-        System.out.println("Age: "+ age);
-        System.out.println("Gender: "+ gender);
-        System.out.println("GPA: "+ gpa);
+        if (gender == 'u') {
+            System.out.println("Gender: Unknown");
+        }
+        if (gender == 'm') {
+            System.out.println("Gender: Male");
+        }
+        if (gender == 'f') {
+            System.out.println("Gender: Female");
+        }
     }
 }
 
