@@ -1,9 +1,8 @@
 package Practice_TDTU.lap3;
-
-import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Arrays;
 
-public class DoLap3 {
+public class HoangDinhQuyVu_521H0517_Lap3 {
     public static void main(String[] args) {
         int[] arr = new int[] {3, 2, 4, 1, 2, 5};
         printArray(arr);
