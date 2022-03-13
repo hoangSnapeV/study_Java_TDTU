@@ -43,3 +43,46 @@ public class Countword {
     }
 }
 }
+
+/*/lap5.3 
+    //String[] words = line.split("\\W+");
+
+    public static void slip(String a) {
+        String[] words = a.split("\\W+");
+        System.out.println(words.length);
+
+        int[] n = new int[words.length];
+
+        for (int i = 0; i < n.length; i++) {
+            n[i] = 0;
+        }
+
+        String[] temp = new String[words.length];
+
+        int indexTemp = 0;
+        for (int i = 0; i < words.length; i++) {
+            boolean exit = false;
+
+            for (int j = 0; j < indexTemp; j++) {
+                if (words[i].equals(temp[j])) {
+                    exit = true;
+                    n[j] +=1;
+                    continue;
+                }
+            }
+            if (exit == false) {
+                temp[indexTemp] = words[i];
+
+                n[indexTemp++] += 1;
+            }
+
+        }
+
+        for (int i = 0; i < indexTemp; i++) {
+            System.out.print(temp[i]);
+            System.out.print(":" + n[i]);
+            System.out.println();
+        }
+        System.out.println(indexTemp);
+
+    } */
