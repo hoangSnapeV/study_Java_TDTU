@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class DoLap3 {
+    
     public static void main(String[] args) {
         int[] arr = new int[] {3, 2, 4, 1, 2, 5};
         printArray(arr);
@@ -14,7 +15,7 @@ public class DoLap3 {
         System.out.print("Exercise 1.2: ");
         printArray(insertElement(arr_1, 5, 2));
 
-        int[] arr2 = new int[] {1, 3, 1, 3, 2, 4};
+        int[] arr2 = new int[] {1, 3, 1, 3, 2, 4, 5, 6, 1, 3, 2, 7};
         System.out.print("Exercise 1.3: ");
         printArray(findDuplicate(arr2));
 
@@ -83,11 +84,11 @@ public class DoLap3 {
         }
         //print array
     public static void printArray(int[] a) {
-            for (int i = 0; i < a.length; i++) {
-                System.out.print(a[i] + " ");
-            }
-            System.out.println();
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
         }
+        System.out.println();
+    }
 
     //////////////////
     //Lap3 
@@ -302,7 +303,7 @@ public class DoLap3 {
         for (int j = 0; j < name.length(); j++) {
 
             if(newName.charAt(j) == u || newName.charAt(j) == e || newName.charAt(j) == o || newName.charAt(j) == a|| newName.charAt(j) == i) {
-                newName = newName.substring(0, j )+ newName.substring(j, j + 1).toUpperCase() + newName.substring(j + 1);
+                newName = newName.substring(0, j ) + newName.substring(j, j + 1).toUpperCase() + newName.substring(j + 1);
             }
         }
         return newName;

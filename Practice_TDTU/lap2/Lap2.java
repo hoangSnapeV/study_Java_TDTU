@@ -62,6 +62,7 @@ public class Lap2 {
 
         return a;
     }
+    
     //print array
     public static void printArray(int[] a) {
         for (int i = 0; i < a.length; i++) {

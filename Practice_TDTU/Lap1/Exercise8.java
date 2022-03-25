@@ -51,6 +51,8 @@ public class Exercise8 {
         return result;
     }
 
+
+    
     //cau d
     public static float function_d(int n) {
         float result = 0;
