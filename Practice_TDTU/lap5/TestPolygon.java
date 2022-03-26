@@ -5,5 +5,8 @@ public class TestPolygon {
         RegularPolygon re = new RegularPolygon();
 
         System.out.println(re.toString());
+
+        RegularPolygon re1 = new RegularPolygon("q1", 4);
+        System.out.println(re1.toString());
     }
 }
