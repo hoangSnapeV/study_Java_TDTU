@@ -1,9 +1,9 @@
 package Practice_TDTU.HoangDinhQuyVu_521H0517_Lap4;
 
-import java.text.DecimalFormat;
+
 
 public class Lap4_House {
-    DecimalFormat f1 = new DecimalFormat("0.0");
+   
     private String houseCode;
     private int numOfBedRooms;
     private boolean hasSwimmingPool;

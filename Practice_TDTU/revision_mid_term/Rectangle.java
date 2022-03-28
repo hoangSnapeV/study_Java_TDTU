@@ -1,6 +1,6 @@
 package Practice_TDTU.revision_mid_term;
 
-import javax.lang.model.util.ElementScanner14;
+
 
 public class Rectangle{
     private String name;
