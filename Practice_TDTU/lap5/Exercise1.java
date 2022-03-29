@@ -1,6 +1,6 @@
 package Practice_TDTU.lap5;
 
-
+import java.util.Scanner;
 
 public class Exercise1 {
     
@@ -27,9 +27,9 @@ public class Exercise1 {
         System.out.println("result_2 = " + countSentences(str));
         System.out.println("result_3 = " + countAppear(str, "and"));
 
-
+        printArray(input(5));
     }
-    
+    //1 - Array
     public static int maxEven(int[] a) {
         int max = a[0];
         
@@ -43,7 +43,91 @@ public class Exercise1 {
         }
         return max;
     }
+    
+    //
+    public static int indexMin(int[] a) {
+        
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    
+    public static int midOdd(int[] a) {
+        if (indexMin(a) < 0) {
+            return -1;
+        }
+        int min = a[indexMin(a)];
+        for (int i = 0; i < a.length; i++) {
+            if (min > a[i] && a[i] % 2 == 1) {
+                min = a[i];
+            } 
+        }
+        return min;
+    }
 
+    //
+    public static int sumMEMO(int[] a) {
+        return midOdd(a) + maxEven(a);
+    }
+
+    public static int sumEven(int[] a) {
+        int result = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 0) {
+                result += a[i];
+            }
+        }
+        return result;
+    }
+
+    public static int prodOdd(int[] a) {
+        int result = 1;
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 1) {
+                result *= a[i];
+            }
+        }
+        return result;
+    }
+    
+    public static int idxFirstEven(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 == 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static int idxLastOdd(int[] a) {
+        for (int i = a.length -1; i >= 0; i--) {
+            if (a[i] % 2 == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    //
+    public static int[] input(int n) {
+        Scanner sc = new Scanner(System.in);
+        int[] result = new int[n];
+        for (int i = 0; i < result.length; i++) {
+            result[i] = sc.nextInt();
+        }
+        return result;
+
+    }
+
+    public static void printArray(int[] a) {
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+    //1 -String
     public static String shortName(String str) {
         String[] names = str.split(" ");
         if(names.length == 1) return names[0];
