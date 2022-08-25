@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch TestRactangle",
+            "request": "launch",
+            "mainClass": "Practice_TDTU.revision_mid_term.TestRactangle",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Test1",
+            "request": "launch",
+            "mainClass": "Practice_TDTU.PraticeInClass.Test1",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch TestArray2",
+            "request": "launch",
+            "mainClass": "Practice_TDTU.PraticeInClass.TestArray2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Practice_TDTU.lap7.Ex1.Test",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
